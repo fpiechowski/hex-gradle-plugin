@@ -1,0 +1,3 @@
+fun domain() {
+    dependencyDomain()
+}
