@@ -74,3 +74,7 @@ tasks.wrapper {
 tasks.named("prepareKotlinBuildScriptModel") {
     dependsOn(":example:dependency:publish")
 }
+
+tasks.named("example:compileKotlin") {
+    dependsOn(":example:dependency:publish")
+}
