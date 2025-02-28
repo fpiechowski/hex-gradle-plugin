@@ -26,7 +26,3 @@ tasks.test {
 kotlin {
     jvmToolchain(21)
 }
-
-tasks.named("compileKotlin") {
-    dependsOn("dependency:publish")
-}
