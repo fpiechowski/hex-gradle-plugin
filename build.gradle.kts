@@ -74,5 +74,3 @@ tasks.wrapper {
 tasks.named("prepareKotlinBuildScriptModel") {
     dependsOn(":example:dependency:publish")
 }
-
-project(":example").evaluationDependsOnChildren()

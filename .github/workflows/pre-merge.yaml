@@ -23,6 +23,8 @@ jobs:
         uses: actions/checkout@v3
       - name: Cache Gradle Caches
         uses: gradle/gradle-build-action@v2
+      - name: Publish local dependency
+        run: ./gradlew :example:dependency:publish --continue
       - name: Run Gradle tasks
         run: ./gradlew preMerge --continue
       - name: Run the plugin
