@@ -21,6 +21,8 @@ jobs:
           java-version: '21'
       - name: Cache Gradle Caches
         uses: gradle/gradle-build-action@v2
+      - name: Publish local dependency
+        run: ./gradlew :example:dependency:publish --continue
       - name: Run Gradle tasks
         run: ./gradlew preMerge --continue
       - name: Publish on Plugin Portal
