@@ -28,6 +28,7 @@ gradlePlugin {
             version = property("VERSION").toString()
             displayName = property("DISPLAY_NAME").toString()
             description = property("DESCRIPTION").toString()
+            tags = property("TAGS").toString().split(",")
         }
     }
 }
