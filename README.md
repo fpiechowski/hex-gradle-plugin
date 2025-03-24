@@ -1,3 +1,5 @@
+[![Gradle Plugin Portal](https://img.shields.io/gradle-plugin-portal/v/io.github.fpiechowski.hex.svg?label=Gradle%20Plugin%20Portal)](https://plugins.gradle.org/plugin/io.github.fpiechowski.hex)
+
 # hex-gradle-plugin
 
 ### Hexagonal Architecture Plugin
@@ -6,7 +8,7 @@
 
 ```kotlin
 plugins {
-    id("io.github.fpiechowski.hex")
+    id("io.github.fpiechowski.hex") version "<<version>>"
 }
 ```
 
@@ -28,6 +30,6 @@ dependencies {
 
 ## Domain artifact and publication
 You can use `domainJar` to create artifact containing sources from just the `domain` source set.
-That allows you to modularize your domain sources.
+This allows you to modularize your domain sources.
 
 Additionally, the plugin prepares `domain` publication for `maven-publish` to publish domain-only artifact.
