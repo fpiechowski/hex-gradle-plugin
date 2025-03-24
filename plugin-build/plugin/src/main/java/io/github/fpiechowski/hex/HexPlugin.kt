@@ -67,6 +67,11 @@ abstract class HexPlugin : Plugin<Project> {
                     compileClasspath += domain.output
                     runtimeClasspath += domain.output
                 }
+
+                getByName("test").apply {
+                    compileClasspath += domain.output
+                    runtimeClasspath += domain.output
+                }
             }
         }
     }
