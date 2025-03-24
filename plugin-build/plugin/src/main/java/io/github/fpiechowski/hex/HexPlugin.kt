@@ -52,7 +52,7 @@ abstract class HexPlugin : Plugin<Project> {
                 group = "build"
             }
 
-            tasks.named<Jar>("shadowJar") {
+            tasks.withType<Jar>().findByName("shadowJar")?.apply {
                 from(sourceSets["domain"].output)
             }
         }
