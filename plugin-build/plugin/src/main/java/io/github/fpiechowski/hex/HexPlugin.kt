@@ -51,10 +51,6 @@ abstract class HexPlugin : Plugin<Project> {
                 from(sourceSets["domain"].output)
                 group = "build"
             }
-
-            tasks.withType<Jar>().findByName("shadowJar")?.apply {
-                from(sourceSets["domain"].output)
-            }
         }
     }
 

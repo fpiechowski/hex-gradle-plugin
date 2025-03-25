@@ -1,3 +1,3 @@
 fun test() {
-    domain()
+    domain(Adapter(DependencyAdapter()))
 }

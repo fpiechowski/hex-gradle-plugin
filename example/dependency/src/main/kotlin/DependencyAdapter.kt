@@ -1,4 +1,3 @@
-@Suppress("unused")
-fun dependencyAdapter() {
-    dependencyDomain()
-}
+class DependencyAdapter : DependencyDomain
+
+fun dependencyAdapter() = DependencyAdapter()

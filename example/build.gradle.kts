@@ -2,6 +2,11 @@ plugins {
     kotlin("jvm") version "2.1.10"
     id("com.github.johnrengelman.shadow") version "8.1.1"
     id("io.github.fpiechowski.hex")
+    application
+}
+
+application {
+    mainClass.set("MainKt")
 }
 
 group = "com.github.fpiechowski"
@@ -25,4 +30,8 @@ tasks.test {
 
 kotlin {
     jvmToolchain(21)
+}
+
+hex {
+    setupJars()
 }
